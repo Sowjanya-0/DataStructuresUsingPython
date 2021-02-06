@@ -1,1 +1,18 @@
-# Quick Sort
+# Experiment 1
+## Aim of the Experiment ---- 2.Write a program for implementing the following sorting methods: c) Quick sort
+
+### Step - by - Step Procedure for the Experiment:
+1.quickSort(array, leftmostIndex, rightmostIndex)
+2.  if (leftmostIndex < rightmostIndex)
+3.    pivotIndex <- partition(array,leftmostIndex, rightmostIndex)
+4.    quickSort(array, leftmostIndex, pivotIndex)
+5.    quickSort(array, pivotIndex + 1, rightmostIndex)
+6.partition(array, leftmostIndex, rightmostIndex)
+7.  set rightmostIndex as pivotIndex
+8.  storeIndex <- leftmostIndex - 1
+9.  for i <- leftmostIndex + 1 to rightmostIndex
+10.  if element[i] < pivotElement
+11.    swap element[i] and element[storeIndex]
+12.    storeIndex++
+13.  swap pivotElement and element[storeIndex+1]
+14.return storeIndex + 1
