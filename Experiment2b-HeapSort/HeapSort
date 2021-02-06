@@ -1,1 +1,17 @@
+# Experiment 1
+## Aim of the Experiment ---- 2.Write a program for implementing the following sorting methods: b) Heap sort
 
+### Step - by - Step Procedure for the Experiment:
+1.void heapify(int arr[], int n, int i) {
+2.int largest = i;
+3.int left = 2 * i + 1;
+4.int right = 2 * i + 2;
+5.if (left < n && arr[left] > arr[largest])
+6.  largest = left;
+7.if (right < n && arr[right] > arr[largest])
+8.  largest = right;
+9.if (largest != i)0 {
+10.    swap(&arr[i], &arr[largest]);
+11.    heapify(arr, n, largest);
+12.    }
+13. }
