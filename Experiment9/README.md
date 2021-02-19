@@ -1,4 +1,4 @@
-#All the functions of a dictionary
+# All the functions of a dictionary
 ## Aim of the program: 9.Write a program to implement all the functions of a dictionary using hashing
 ### Step by Step Procedure:
 1.def insert()
