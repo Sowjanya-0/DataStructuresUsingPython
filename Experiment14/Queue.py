@@ -26,31 +26,22 @@ def search(key):
             
     
 print("Menu Option")
-print("1.Enqueue 2.Dequeue 3.Search 4.Display 5.Exit")
-n = int(input("please enter a choice: "))
-while(n>0):
+while(1):
+    print("1.Enqueue 2.Dequeue 3.Search 4.Display 5.Exit")
+    n = int(input("please enter a choice: "))
     if n==1: 
         e=str(input("Enter any alphabet: "))
         enqueue(e)
-        print("1.Enqueue 2.Dequeue 3.Search 4.Display 5.Exit")
-        n = int(input("please enter a choice: "))
     elif n==2: 
         dequeue()
-        print("1.Enqueue 2.Dequeue 3.Search 4.Display 5.Exit")
-        n = int(input("please enter a choice: "))
     elif n==3:
         k = str(input("Enter a key: "))
         search(k)
-        print("1.Enqueue 2.Dequeue 3.Search 4.Display 5.Exit")
-        n = int(input("please enter a choice: "))
     elif n==4:
         display()
-        print("1.Enqueue 2.Dequeue 3.Search 4.Display 5.Exit")
-        n = int(input("please enter a choice: "))
     elif n==5:
         exit()
     else: 
         print("Enter 1-4 only")
-        print("1.Enqueue 2.Dequeue 3.Search 4.Display 5.Exit")
-        n = int(input("please enter a choice: "))
+
     
